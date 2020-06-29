@@ -16,15 +16,18 @@ It currently adds the following content:
 -Transporter Key: an item that allows you to teleport to any Transporters currently placed in the world. Right-click to cycle through the Transporters and left-click to teleport. (In case placing the Transporters fails to update them correctly, right-click the Key in your inventory.)
 
 
-Credit:
+
+Credits:
 -TheGoogolMoon: coding
 -Skai: textures
 -Spurgutron: textures
 
+
+
 Change log:
 v0.2.1:
 -Added GitHub repository
--Added credit to mod creators
+-Added credits to mod creators
 
 v0.2:
 -Fixed finding Transporters upon entering a World
