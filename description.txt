@@ -1,7 +1,6 @@
 This mod adds a convenient method of teleportation pre-Hardmode.
 
-Say goodbye to wiring teleporters together - this mod adds an item that can connect to any placed Transporter tiles and teleport you to them instantaneously! The Transporter Key can cycle through Transporters on the fly, see details below and in the tooltip.
-(Batteries not included).
+Say goodbye to wiring teleporters together - this mod adds an item that can connect to any placed Transporter tiles and teleport you to them instantaneously! The Transporter Key can cycle through Transporters on the fly, see details below and in the tooltip. (Batteries not included.)
 
 
 
@@ -9,7 +8,7 @@ Hint: to get started with crafting these items, search for crashed transportatio
 
 
 It currently adds the following content:
--Transportation Core: a crafting station obtained from a crashed alien transportation unit. These spawn in your world randomly, with 1 or 2 located in the central third of the world in the cavern layer, and 1 or 2 located anywhere, depending on the world size.
+-Transportation Core: a crafting station obtained from a crashed alien transportation unit. These spawn in your world randomly, with 1 or 2 located within the central 600 blocks in the cavern layer, and 1 or 2 located anywhere, depending on the world size.
 
 -Transporter: a teleporter-type of item with unlimited range and no wiring. They are labelled each with a number, with the numbers assigned by their world position in ascending order from left to right.
 
@@ -25,6 +24,10 @@ Credits:
 
 
 Change log:
+v0.2.2:
+-Changed crashed alien transportation unit to spawn within a 600-block wide region rather than a third of the world
+-Added one Martian Conduit Plating to spawned transportation units
+
 v0.2.1:
 -Added GitHub repository
 -Added credits to mod creators

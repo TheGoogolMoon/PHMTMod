@@ -2,8 +2,6 @@ using Terraria;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 using System.Collections.Generic;
-using System.Linq;
-using System;
 using Terraria.World.Generation;
 using Terraria.GameContent.Generation;
 using Terraria.ID;
@@ -41,20 +39,22 @@ namespace PreHMTeleportation
             for (int k = 0; k < randomNumber; k++)
             {
                 bool added = false;
-                while(!added)
+                int tries = 0;
+                while(!added && ++tries < 100)
                 {
                     int x = WorldGen.genRand.Next(100, w - 100);
-                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, h - 100);
+                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, (int)WorldGen.rockLayerLow);
                     added = AddSpaceshipStructure(x, y);
                 }
             }
             for (int k = 0; k < centralNumber; k++)
             {
                 bool added = false;
-                while (!added)
+                int tries = 0;
+                while (!added && ++tries < 100)
                 {
-                    int x = WorldGen.genRand.Next(w / 3, 2 * w / 3);
-                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, h - 100);
+                    int x = WorldGen.genRand.Next(w / 2 - 300, w / 2 + 300);
+                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, (int)WorldGen.rockLayerLow);
                     added = AddSpaceshipStructure(x, y);
                 }
             }
@@ -64,7 +64,7 @@ namespace PreHMTeleportation
                 (int X, int Y)[] blockCoords = new (int X, int Y)[]
                 {
                     (1, 2), (1, 3), (1, 13),
-                    (2, 2), (2, 6),
+                    (2, 2), (2, 5), (2, 6),
                     (4, 1), (4, 5), (4, 6), (4, 7), (4, 11), (4, 13), (4, 14), (4, 15), (4, 16),
                     (5, 4), (5, 12), (5, 14), (5, 16), (5, 17),
                     (6, 5), (6, 6), (6, 13), (6, 17), (6, 18),
@@ -111,7 +111,7 @@ namespace PreHMTeleportation
                  * x=13, y=12..16
                  * x=14, y=13.16 */
                 //place core on x=12, y=16
-                
+
                 foreach ((int Xrel, int Yrel) in blockCoords)
                 {
                     int X = Xrel + xcoord;
