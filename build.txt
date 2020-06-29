@@ -1,0 +1,6 @@
+displayName = Pre-Hardmode Teleportation
+author = TheGoogolMoon
+version = 0.2
+hideCode = true
+hideResources = true
+includeSource = false
