@@ -1,7 +1,7 @@
 displayName = Pre-Hardmode Teleportation
 author = TheGoogolMoon
-version = 0.3.1
+version = 0.3.2
 hideCode = true
 hideResources = true
 includeSource = false
-homepage = https://github.com/TheGoogolMoon/PHMTMod
+homepage = https://forums.terraria.org/index.php?threads/convenient-teleportation.95484/
