@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Terraria.World.Generation;
 using Terraria.GameContent.Generation;
 using Terraria.ID;
+using System.Runtime.ExceptionServices;
 
 namespace PreHMTeleportation
 {
@@ -43,7 +44,7 @@ namespace PreHMTeleportation
                 while(!added && ++tries < 100)
                 {
                     int x = WorldGen.genRand.Next(100, w - 100);
-                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerLow, (int)WorldGen.rockLayerHigh);
+                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, h - 300);
                     added = AddSpaceshipStructure(x, y);
                 }
             }
@@ -54,7 +55,7 @@ namespace PreHMTeleportation
                 while (!added && ++tries < 100)
                 {
                     int x = WorldGen.genRand.Next(w / 2 - 300, w / 2 + 300);
-                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerLow, (int)WorldGen.rockLayerHigh);
+                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, h - 300);
                     added = AddSpaceshipStructure(x, y);
                 }
             }
