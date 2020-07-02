@@ -43,7 +43,7 @@ namespace PreHMTeleportation
                 while(!added && ++tries < 100)
                 {
                     int x = WorldGen.genRand.Next(100, w - 100);
-                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, (int)WorldGen.rockLayerLow);
+                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerLow, (int)WorldGen.rockLayerHigh);
                     added = AddSpaceshipStructure(x, y);
                 }
             }
@@ -54,7 +54,7 @@ namespace PreHMTeleportation
                 while (!added && ++tries < 100)
                 {
                     int x = WorldGen.genRand.Next(w / 2 - 300, w / 2 + 300);
-                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerHigh, (int)WorldGen.rockLayerLow);
+                    int y = WorldGen.genRand.Next((int)WorldGen.rockLayerLow, (int)WorldGen.rockLayerHigh);
                     added = AddSpaceshipStructure(x, y);
                 }
             }
