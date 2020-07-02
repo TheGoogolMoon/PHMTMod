@@ -36,6 +36,7 @@ namespace PreHMTeleportation.Items
 
         public override void RightClick(Player player)
         {
+			player.GetModPlayer<PHMTPlayer>().UpdateTransporters();
 			player.PutItemInInventory(item.type);
         }
 

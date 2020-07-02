@@ -1,6 +1,11 @@
-This mod adds a convenient method of teleportation pre-Hardmode.
+This mod adds a convenient method of teleportation available already pre-Hardmode.
 
 Say goodbye to wiring teleporters together - this mod adds an item that can connect to any placed Transporter tiles and teleport you to them instantaneously! The Transporter Key can cycle through Transporters on the fly, see details below and in the tooltip. (Batteries not included.)
+
+
+NEW: Added custom labels to each transporter. Now you can name and select all your transporters by opening the Transporter menu via a hotkey for easy identification!
+
+
 
 
 
@@ -16,14 +21,19 @@ It currently adds the following content:
 
 
 
+
+
 Credits:
 -TheGoogolMoon: coding
 -Skai: textures
 -Spurgutron: textures
 
 
-
 Change log:
+v0.3:
+-Added Transporter labelling
+-Fixed right-clicking in inventory not properly updating the Transporters
+
 v0.2.2:
 -Changed crashed alien transportation unit to spawn within a 600-block wide region rather than a third of the world
 -Added one Martian Conduit Plating to spawned transportation units
